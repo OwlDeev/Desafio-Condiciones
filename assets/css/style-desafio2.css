@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Simpsonfont;
+    src: url(Simpsonfont.otf);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images4.alphacoders.com/683/683117.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Simpsonfont;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Simpsonfont;
+}
+.divSticker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.divMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 80%;
+    border-radius: 20px;
+}
+
+.sticker{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgSticker{
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.titleImg{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.verifyButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+}
+
+#labelRestriction{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*Efecto de rotación*/
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+#iconButton{
+    width: 25px;
+    height: 25px;
+    animation: rotation 8s infinite linear;
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+#buttonVerify{
+    -webkit-text-stroke: 0.8px black;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+}
+
+.divResult{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgResult{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.divMainResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#divResultLabel{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelResult{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}

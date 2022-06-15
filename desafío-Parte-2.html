@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style-desafio2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Desafío Parte 2</title>
+</head>
+<body>
+    <main>
+        <div class="divMain">
+            <div class="divSticker fade-in">
+                <div class="sticker">
+                    <img src="assets/imgs/sticker1.jpg" alt="" class="imgSticker">
+                    <label for="" class="titleImg">"WUUUU HUUU"</label>
+                    <input type="number" id="inputSticker1" min="0">
+                </div>
+
+                <div class="sticker">
+                    <img src="assets/imgs/sticker2.jpg" alt="" class="imgSticker">
+                    <label for="" class="titleImg">"TENIA QUE COMBINAR"</label>
+                    <input type="number" id="inputSticker2" min="0">
+                </div>
+
+                <div class="sticker">
+                    <img src="assets/imgs/sticker3.jpg" alt="" class="imgSticker">
+                    <label for="" class="titleImg">"HAAAA HAAA"</label>
+                    <input type="number" id="inputSticker3" min="0">
+                </div>
+            </div>
+            <div class="verifyButton fade-in">
+                <label for="" id="labelRestriction">Solo puedes llevar 10 max</label>
+                <button type="button" class="btn btn-warning" id="buttonVerify"><img src="assets/imgs/imgButton.png" id="iconButton"> Verificar</button>
+            </div>
+
+            <!-- ========== Start Div de resultado ========== -->
+            <div class="divMainResult fade-out">
+                <div class="divResult">
+                    <div class="result">
+                        <img src="assets/imgs/sticker1.jpg" alt="" class="imgResult">
+                        <label for="" class="titleImg" id="resultInput1"></label>
+                    </div>
+
+                    <div class="result">
+                        <img src="assets/imgs/sticker2.jpg" alt="" class="imgResult">
+                        <label for="" class="titleImg" id="resultInput2"></label>
+                    </div>
+
+                    <div class="result">
+                        <img src="assets/imgs/sticker3.jpg" alt="" class="imgResult">
+                        <label for="" class="titleImg" id="resultInput3"></label>
+                    </div>
+                </div>
+                <div id="divResultLabel">
+                    <label class='labelResult'></label>
+                    <button type="button" class="btn btn-warning" id="buttonRepeat"><img src="assets/imgs/imgButton.png" id="iconButton">Volver a elegir</button>
+                </div>
+            </div>
+            <!-- ========== End Div de resultado ========== -->
+            
+        </div>                
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
