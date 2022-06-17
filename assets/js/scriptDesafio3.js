@@ -59,8 +59,14 @@ unlock.onclick = function(){
         fadeIn(winDiv)
     }else{
         form.style.backgroundColor = 'red ';
+        numberOne.style.backgroundColor = 'red';
+        numberTwo.style.backgroundColor = 'red ';
+        numberThree.style.backgroundColor = 'red ';
         setInterval(() => {
             form.style.backgroundColor = '#2c637d';
+            numberOne.style.backgroundColor = '#2c637d';
+            numberTwo.style.backgroundColor = '#2c637d';
+            numberThree.style.backgroundColor = '#2c637d';
         }, 1500);
     }
 }
