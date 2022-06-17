@@ -1,15 +1,3 @@
-//DESAFIO 1------------------------------------------------------
-
-let imgMain = document.getElementsByClassName('imgMain');
-    imgMain = imgMain[0];
-    function imgOnClick(){
-    if(imgMain.style.border == "1px solid red"){
-        imgMain.style.border = 'none';
-    }else{
-        imgMain.style.border = '1px solid red';
-    }
-}
-
 //DESAFIO 2------------------------------------------------------
 
 //div principal y resultado
@@ -17,11 +5,11 @@ let divFade = document.getElementsByClassName('fade-in');
 let divResult = document.getElementsByClassName('fade-out')[0];
 
 let inputSticker1 = document.getElementById('inputSticker1')
-    inputSticker1.value = '0';
+    
 let inputSticker2 = document.getElementById('inputSticker2')
-    inputSticker2.value = '0';
+
 let inputSticker3 = document.getElementById('inputSticker3')
-    inputSticker3.value = '0';
+  
 
 //boton y label
 let labelResult = document.getElementsByClassName('labelResult')[0];
@@ -64,10 +52,3 @@ buttonRepeat.onclick = function(){
         divFade[i].style.opacity = '1';
     }
 }
-
-//DESAFIO 3------------------------------------------------------
-
-
-
-
-

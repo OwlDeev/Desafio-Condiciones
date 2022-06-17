@@ -4,31 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style-desafio3.css" />
+    <link rel="stylesheet" href="assets/css/styleDesafio3.css" />
     <title>Desafío Parte 3</title>
   </head>
   <body>
-    <main>
+    <main id="main">
       <h1>Los codigos secretos son:</h1>
       <div id="clueMain">
-        <img src="assets/imgs/clue.png" alt="" class="clueImg">
+        <img src="assets/imgs/clue.png" id="clueImgOne">
         <div id="clueOne">
             <h2>Codigo 1: El numero de la policia en EEUU</h2>
         </div>
 
-        <img src="assets/imgs/clue.png" alt="" class="clueImg">
+        <img src="assets/imgs/clue.png" id="clueImgTwo">
         <div id="clueTwo">
             <h3>Codigo 1: El numero es la suma de '7' + '1' + '4'</h3>
         </div>
       </div>
-      <form action="">
+      <form id="form">
         <div>
           <div class="lockbar">
             <div class="cutoff"></div>
           </div>
           <div class="d-flex justify-content-around" id="numberUnlock">
-            <select class="form-select" aria-label="Default select example">
-              <option selected></option>
+            <select class="form-select" aria-label="Default select example" id="numberOne">
+              <option selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -40,8 +40,8 @@
               <option value="9">9</option>
             </select>
 
-            <select class="form-select" aria-label="Default select example">
-              <option selected></option>
+            <select class="form-select" aria-label="Default select example" id="numberTwo">
+              <option selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -53,8 +53,8 @@
               <option value="9">9</option>
             </select>
 
-            <select class="form-select" aria-label="Default select example">
-              <option selected></option>
+            <select class="form-select" aria-label="Default select example" id="numberThree">
+              <option selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -66,9 +66,14 @@
               <option value="9">9</option>
             </select>
         </div>
-          <input type="submit" value="Unlock" />
+          <input type="button" value="Unlock" id="unlock"/>
         </div>
       </form>
     </main>
+    <div class="winDiv">
+      <label id="winLabel">Ganaste!</label>
+      <button id="repeatButton">Volver a probar</button>
+    </div>
+    <script src="assets/js/script-desafio3.js"></script>
   </body>
 </html>

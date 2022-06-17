@@ -1,0 +1,44 @@
+body{
+    background-color: #000000;
+    height: 100vh;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.challenge{
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+
+.challengeItem{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleLabel{
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#titlePage{
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 100px;
+}
