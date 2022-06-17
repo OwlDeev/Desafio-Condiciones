@@ -20,20 +20,14 @@
 
   h2 {
     font-size: 40px;
-    width: 33%;
     font-weight: normal;
-    position: absolute;
-    top: 50%; left: 30px;
     color: rgba(255, 0, 0, 0.568);
     text-shadow: 0 10px 30px hsla(0, 0%, 0%, 1);
   }
 
   h3 {
     font-size: 40px;
-    width: 33%;
     font-weight: normal;
-    position: absolute;
-    top: 60%; left: 30px;
     color: rgba(255, 0, 0, 0.568);
     text-shadow: 0 10px 30px hsla(0, 0%, 0%, 1);
   }
@@ -104,3 +98,57 @@
   input:last-child {
     margin-bottom: 0;
   }
+
+  #numberUnlock{
+    padding-bottom: 30px;
+  }
+
+  select{
+    width: 32%;
+    height: 30px;
+  }
+
+  #clueMain{
+    position: absolute;
+    top: 60%; left: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  #clueOne{
+    width: 100%;
+    margin-right: 30px;
+    opacity: 0;
+  }
+
+  #clueTwo{
+    width: 100%;
+    margin-left: 30px;
+    opacity: 0;
+  }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.clueImg{
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px #4f9;
+    margin-left: 50px;
+}
+
+#clueOne{
+  
+}
+
+#clueTwo{
+  
+}
