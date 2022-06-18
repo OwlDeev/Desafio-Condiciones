@@ -58,17 +58,11 @@ unlock.onclick = function(){
         fadeOut(main)  
         fadeIn(winDiv)
     }else{
-        unlock.value = 'Pass Incorrect';
         form.style.backgroundColor = 'red ';
-        numberOne.style.backgroundColor = 'red';
-        numberTwo.style.backgroundColor = 'red ';
-        numberThree.style.backgroundColor = 'red ';
+        unlock.value = 'Pass Incorrect';
         setInterval(() => {
             form.style.backgroundColor = '#2c637d';
             unlock.value = 'Unlock';
-            numberOne.style.backgroundColor = '#2c637d';
-            numberTwo.style.backgroundColor = '#2c637d';
-            numberThree.style.backgroundColor = '#2c637d';
         }, 1500);
     }
 }
